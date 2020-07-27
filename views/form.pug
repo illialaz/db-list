@@ -1,0 +1,10 @@
+h1 Enter a dog name
+
+form(method='POST' action='/dog')
+  input(name='name' placeholder='Enter a dog name' required)
+  button(type='submit')
+    | Add a dog
+
+ul 
+  each val in items 
+    li=val.name
